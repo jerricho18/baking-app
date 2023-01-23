@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/teal_200"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/iv_recipe_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_bakery_dining_24"/>
+
+    <TextView
+        android:id="@+id/tv_recipe_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/iv_recipe_image"
+        app:layout_constraintLeft_toRightOf="@id/iv_recipe_image"
+        tools:text="Recipe Name"
+        android:textStyle="bold"
+        android:layout_marginStart="8dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_recipe_servings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_recipe_name"
+        app:layout_constraintLeft_toLeftOf="@id/tv_recipe_name"
+        tools:text="8 servings"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
